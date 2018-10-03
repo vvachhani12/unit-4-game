@@ -1,0 +1,96 @@
+body {
+    background-image: url("../images/just-waves.png");
+    width: auto;
+}
+
+.div1 {
+    background: red; 
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    width: fit-content;
+    padding: inherit;
+}
+
+.div2 {
+    background: green; 
+    margin-left: 10px;
+    margin-bottom: 5px;
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 25px;
+}
+
+.lead {
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.div3 {
+    background: purple;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    width: fit-content;
+    float: left;
+    height: fit-content;
+    padding: inherit;
+}
+
+.div4 {
+    float: left;
+    background: yellow; 
+    margin-left: 10px;
+    margin-bottom: 5px;
+    width: fit-content;
+    height: fit-content;
+    padding: inherit;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.btn {    
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+#blueCrystal {
+    clear: both;
+    width: fit-content;
+    float: left;
+}
+
+#redCrystal {
+    width: fit-content;
+    float: left;
+}
+
+#greenCrystal {
+    width: fit-content;
+    float: left;
+}
+
+#purpleCrystal {
+    width: fit-content;
+    float: left;
+}
+
+.div9 {
+    clear: both;
+    background: brown;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    width: fit-content;
+    padding: 1px;
+}
+
+.div10 {
+    background: brown;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 20%;
+    height: 80px;
+    padding: inherit;
+}

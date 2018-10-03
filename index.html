@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Gem Collector</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+</head>
+<body id="body">
+    <div class="div1 jumbotron jumbotron-fluid">
+        <div class="container">
+          <h2 class="display-5">Crytals Collector!</h1>
+          <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
+        </div>
+    </div>
+    <div class="div2 jumbotron jumbotron-fluid">
+        <div class="container">
+          <h3 class="display-8">The Rules</h1>
+          <p class="lead">You will be given a random number at the start of the games</p>
+          <p class="lead">There are four crystals below. By clicking on a crystal you will add a specific amount of point to your total score.</p>
+          <p class="lead">You will win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+          <p class="lead">The value of each crystal is hidden from you until you click on it.</p>
+          <p class="lead">Each time when the game starts, the game will change the values of each crystals.</p>
+        </div>
+    </div>
+    <div class="div3 jumbotron jumbotron-fluid">
+        <div class="container">
+          <h4 class="display-5">Random Number</h1>
+          <h3 class="display-5" id="rndNum"></h1>
+        </div>
+    </div>
+    <div class="div4 jumbotron jumbotron-fluid">
+        <div class="container">
+            <h4 class="display-5" id="win-text"></h1>          
+            <h4 class="display-5">Win: <span id="win"></span></h1>
+            <h4 class="display-5">Losses: <span id="loss"></span></h1>
+        </div>
+    </div>
+    <button type="button" class="btn btn-light" id="blueCrystal">
+          <img src="assets/images/blue-crystal.png" alt="Blue-Crystal">
+    </button>
+    <button type="button" class="btn btn-light" id="redCrystal">
+          <img src="assets/images/red-crystal.jpg" alt="Red-Crystal">          
+    </button>
+    <button type="button" class="btn btn-light" id="greenCrystal">
+          <img src="assets/images/green-crystal.png" alt="Green-Crystal">
+    </button>
+    <button type="button" class="btn btn-light" id="purpleCrystal">
+          <img src="assets/images/purple-crystal.png" alt="Purple-Cyrstal">
+    </button>
+    <div class="div9 jumbotron jumbotron-fluid">
+        <div class="container">
+          <h4 class="display-8">Your total Score: <span id="totalScore"></span></h1>
+        </div>
+    </div>
+    <div class="div10 jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-5" id="points"></h1>
+        </div>
+    </div>
+
+
+<script src="assets/javascript/game.js"></script>    
+</body>
+</html>
