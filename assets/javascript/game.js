@@ -1,3 +1,4 @@
+///*********************Vairables***************************8**/
 var randomNumber = $("#rndNum");
 var winNumber = $("#win");
 var lossNumber = $("#loss");
@@ -17,14 +18,17 @@ var redNum = btnNum();
 var greenNum = btnNum();
 var purpleNum = btnNum();
 
+// Generating random number //
 function randNum(){
     return (Math.floor((Math.random()*102)) + 19);
 }
 
+// Generating random number for the crystal //
 function btnNum(){
     return (Math.floor(Math.random()*12) + 1);
 }
 
+// function to compare the sum of each crystal's value to the randon number //
 function compareSum() {
     if(sumPoints == randomNumber.text()){
         //console.log("win")
@@ -41,15 +45,16 @@ function compareSum() {
         //console.log("number of loss: "+loss);
         winText.text("You Lost!")
         lossNumber.text(loss);
-        $("#body").css("background", "red");
-        setTimeout(function(){
-        debugger;
-            $("#body").css("background-image", "(../images/just-waves.png)");            
-        }, 1000)
+        // $("#body").css("background", "red");
+        // setTimeout(function(){
+        // debugger;
+        //     $("#body").css("background-image", "(../images/just-waves.png)");            
+        // }, 1000)
         clearAll();
     }
 }
 
+// Reset function to clear all the crystal values and text //
 function clearAll(){
     crystalPoints.empty();
     (randomNumber.text(randNum()));
@@ -62,10 +67,12 @@ function clearAll(){
 
 $(document).ready(function() {    
 
+// Generating a random number //
     (randomNumber.text(randNum()));
 
-    console.log(randomNumber.text());
+    //console.log(randomNumber.text());
 
+// Blue Crystal on click events //
     blueCrystal.on("click", function(){
         winText.empty();
         blueCrystal.attr("value", blueNum);
@@ -76,6 +83,7 @@ $(document).ready(function() {
         compareSum();
     });
 
+// Red Crystal on click events //
     redCrystal.on("click", function(){
         winText.empty();
         redCrystal.attr("value", redNum);
@@ -86,6 +94,7 @@ $(document).ready(function() {
         compareSum();  
     });
 
+// Green Crystal on click events //
     greenCrystal.on("click", function(){
         winText.empty();
         greenCrystal.attr("value", greenNum);
@@ -96,6 +105,7 @@ $(document).ready(function() {
         compareSum();
     });
 
+// Purple Crystal on click events //
     purpleCrystal.on("click", function(){
         winText.empty();
         purpleCrystal.attr("value", purpleNum);
